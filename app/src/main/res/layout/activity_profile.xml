@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F5F5"
+    tools:context=".Aurora.Activity.Profile">
+
+    <include
+        layout="@layout/tool_bar_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </include>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="#FFD717"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:foregroundGravity="center_horizontal"
+                app:cardCornerRadius="@dimen/_100sdp"
+                app:cardElevation="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/appicon" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/_tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Qasem Jber"
+                android:textColor="#fff"
+                android:textSize="@dimen/_27ssp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardprofile_answers"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/correctanswers"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_17ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="#FFD717"
+                        android:textSize="@dimen/_27ssp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wrongwnswers"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_17ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50"
+                        android:textColor="#FFD717"
+                        android:textSize="@dimen/_27ssp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/numberofquestions"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_17ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="150"
+                        android:textColor="#FFD717"
+                        android:textSize="@dimen/_27ssp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_25sdp">
+            <ImageView
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:src="@drawable/ic_baseline_email_24"/>
+
+            <TextView
+                android:id="@+id/tv_useremail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/_15sdp"
+                android:text="kgofficial@gmail.com"
+                android:textColor="#0A2647"
+                android:textSize="@dimen/_18ssp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_25sdp">
+            <ImageView
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:src="@drawable/ic_baseline_phone_iphone_24"/>
+
+            <TextView
+                android:id="@+id/tv_userphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/_15sdp"
+                android:text="+92345-1234567"
+                android:textColor="#0A2647"
+                android:textSize="@dimen/_18ssp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_25sdp">
+            <ImageView
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:src="@drawable/ic_baseline_location_on_24"/>
+
+            <TextView
+                android:id="@+id/tv_userlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/_15sdp"
+                android:text="Karachi- Pakistan"
+                android:textColor="#0A2647"
+                android:textSize="@dimen/_18ssp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_15ssp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FFD717"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Experience" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_33sdp"
+        android:layout_marginEnd="@dimen/_33sdp"
+        android:progress="20"
+        android:max="50"
+        android:progressDrawable="@drawable/custom_tool_bar"
+        android:layout_width="match_parent"
+        android:thumb="@drawable/thaem_seek_bar"
+        android:layout_height="@dimen/_6sdp" />
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level"
+        android:textSize="18sp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_qustion"/>
+
+
+    <TextView
+        android:id="@+id/tv_qustion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="السؤال 1"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@id/cardquistion"
+        app:layout_constraintTop_toBottomOf="@id/tv_level"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </TextView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardquistion"
+        android:layout_width="333dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="77dp"
+        app:cardBackgroundColor="#FFF4CF"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_qustion" >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="أين تقع دولة غانا ؟ "
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textSize="22sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level : المرحلة الاولى "
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginBottom="22dp"
+                android:ems="10"
+                android:hint="Enter A Answer"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginStart="66dp"
+        android:text="Aurora"
+        android:backgroundTint="#8BC34A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardquistion">
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

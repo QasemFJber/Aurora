@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" translatable="false">Aurora</string>
+    <string name="welcometogame" translatable="false">Welcome To Game My Friend </string>
+    <string name="testyourcultural" translatable="false">Quite simply, test your cultural knowledge , On many different topics</string>
+
+    <string name="sound" translatable="false">Sound</string>
+    <string name="restartthegame" translatable="false">Restart The Game</string>
+    <string name="notifications" translatable="false">Notifications</string>
+    <string name="correctanswers" translatable="false">Correct Answers</string>
+    <string name="wrongwnswers" translatable="false">Wrong Answers</string>
+    <string name="numberofquestions" translatable="false">Number Of Questions</string>
+    <string name="Experience" translatable="false">Experience</string>
+    <string name="username" translatable="false">User Name</string>
+    <string name="email" translatable="false">E-mail</string>
+    <string name="phone" translatable="false">Phone</string>
+    <string name="location" translatable="false">Location</string>
+    <string name="save" translatable="false">Save</string>
+
+</resources>

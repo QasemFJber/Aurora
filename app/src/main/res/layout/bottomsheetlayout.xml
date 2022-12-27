@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_150sdp"
+        app:layout_constraintBottom_toTopOf="@+id/et_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loadingprofile" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:background="@drawable/edit_text_update_profile"
+        android:drawableStart="@drawable/ic_baseline_create_24"
+
+        android:textStyle="italic"
+        android:textSize="@dimen/_16ssp"
+        android:drawablePadding="@dimen/_7sdp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:padding="@dimen/_9sdp"
+        app:layout_constraintBottom_toTopOf="@+id/et_useremail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/loading2" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading2"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_username"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/update" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_useremail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_useremail"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/update" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading3"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_userphone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_userphone"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/update" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading4"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_userlocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_userlocation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/update" />
+
+    <EditText
+        android:id="@+id/et_useremail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:textSize="@dimen/_16ssp"
+
+
+        android:background="@drawable/edit_text_update_profile"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="@dimen/_7sdp"
+
+        android:ems="10"
+        android:textStyle="italic"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_9sdp"
+        app:layout_constraintBottom_toTopOf="@+id/et_userphone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/loading" />
+
+    <EditText
+        android:id="@+id/et_userphone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+
+        android:textSize="@dimen/_16ssp"
+
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:background="@drawable/edit_text_update_profile"
+        android:drawableStart="@drawable/ic_baseline_phone_iphone_24"
+
+        android:drawablePadding="@dimen/_7sdp"
+        android:ems="10"
+        android:textStyle="italic"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:padding="@dimen/_9sdp"
+        app:layout_constraintBottom_toTopOf="@+id/et_userlocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/loading3" />
+
+    <EditText
+        android:id="@+id/et_userlocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_44sdp"
+        android:background="@drawable/edit_text_update_profile"
+        android:drawableStart="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="@dimen/_7sdp"
+        android:ems="10"
+        android:textSize="@dimen/_16ssp"
+
+        android:hint="@string/location"
+        android:textStyle="italic"
+        android:inputType="textPersonName"
+        android:padding="@dimen/_9sdp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/loading4" />
+
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_99sdp"
+        android:layout_marginEnd="@dimen/_55sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:backgroundTint="#6E7477"
+        android:text="@string/save"
+        android:textSize="@dimen/_20ssp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

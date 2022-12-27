@@ -1,0 +1,122 @@
+[{
+		"level_no": 1,
+		"unlock_points": 0,
+		"questions": [{
+				"id": 1,
+				"title": "عدد أحرف اللغة الانجليزية 28 حرف",
+				"answer_1": "",
+				"answer_2": "",
+				"answer_3": "",
+				"answer_4": "",
+				"true_answer": "false",
+				"points": 3,
+				"duration": 1500,
+				"pattern": {
+					"pattern_id": 1,
+					"pattern_name": "True of False"
+				},
+				"hint": "عدد أحرف اللغة الانجليزية 26 حرف فقط"
+			},
+			{
+				"id": 2,
+				"title": "عاصمة أثيوبيا هي",
+				"answer_1": "أديس أبابا",
+				"answer_2": "جامايكا",
+				"answer_3": "كوالالمبور",
+				"answer_4": "دبلن",
+				"true_answer": "أديس أبابا",
+				"points": 2,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 2,
+					"pattern_name": "Choose the correct answer"
+				},
+				"hint": "عاصمة أثيوبيا هي أديس أبابا"
+			}
+			,{
+				"id": 3,
+				"title": "الكوكب الأحمر هو كوكب",
+				"answer_1": "",
+				"answer_2": "",
+				"answer_3": "",
+				"answer_4": "",
+				"true_answer": "المريخ",
+				"points": 1,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 3,
+					"pattern_name": "Fill the answer"
+				},
+				"hint": "الكوكب الأحمر هو كوكب المريخ"
+			},
+			{
+				"id": 4,
+				"title": "عدد كواكب المجموعة الشمسية",
+				"answer_1": "10 كواكب",
+				"answer_2": "3 كواكب",
+				"answer_3": "8 كواكب",
+				"answer_4": "12 كوكب",
+				"true_answer": "8 كواكب",
+				"points": 2,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 2,
+					"pattern_name": "Choose the correct answer"
+				},
+				"hint": "عدد كواكب المجموعة الشمسية هو 8 كواكب فقط"
+			}
+		]
+	},
+	{
+		"level_no": 2,
+		"unlock_points": 6,
+		"questions": [{
+				"id": 1,
+				"title": "شكل مجرة درب التبانة هو حلزوني",
+				"answer_1": "",
+				"answer_2": "",
+				"answer_3": "",
+				"answer_4": "",
+				"true_answer": "true",
+				"points": 5,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 1,
+					"pattern_name": "True of False"
+				},
+				"hint": "شكل مجرة درب التبانة هو حلزوني"
+			},
+			{
+				"id": 2,
+				"title": "يسمى صغير الضفدع",
+				"answer_1": "دنغل",
+				"answer_2": "شرغوف",
+				"answer_3": "يرقة",
+				"answer_4": "كوالا",
+				"true_answer": "شرغوف",
+				"points": 4,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 2,
+					"pattern_name": "Choose the correct answer"
+				},
+				"hint": "صغير الضفدع هو الشرغوف"
+			}
+			,{
+				"id": 3,
+				"title": "تعتبر ال....... هي أسرع المخلوقات البحرية",
+				"answer_1": "",
+				"answer_2": "",
+				"answer_3": "",
+				"answer_4": "",
+				"true_answer": "التونة",
+				"points": 1,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 3,
+					"pattern_name": "Fill the answer"
+				},
+				"hint": "التونة تعتبر اسرع المخلوقات البحرية، حيث يعتبر الحوت أكبرها"
+			}
+		]
+	}]

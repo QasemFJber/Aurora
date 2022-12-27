@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Aurora</string>
+    <string name="welcometogame" translatable="false">مرحبا بك في Aurora </string>
+    <string name="testyourcultural" translatable="false">بكل بساطة ، اختبر معلوماتك الثقافية ، في العديد من الموضوعات المختلفة</string>
+    <string name="sound" translatable="false">الصوت</string>
+    <string name="restartthegame" translatable="false">اعادة بدء اللعبة </string>
+    <string name="notifications" translatable="false">الاشعارات</string>
+    <string name="correctanswers" translatable="false">الاجابات الصحيحة</string>
+    <string name="wrongwnswers" translatable="false">الاجابات الخاطئة</string>
+    <string name="numberofquestions" translatable="false">عدد الأسئلة</string>
+    <string name="Experience" translatable="false">الخبرة</string>
+    <string name="username" translatable="false">اسم المستخدم </string>
+    <string name="email" translatable="false">البريد الإلكتروني</string>
+    <string name="phone" translatable="false">رقم الهاتف </string>
+    <string name="location" translatable="false">موقعك</string>
+    <string name="save" translatable="false">حفظ</string>
+</resources>
