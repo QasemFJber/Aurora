@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:name=".Aurora.Activity.controllers.AppController"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,6 +17,22 @@
         android:theme="@style/Theme.QasemTest"
         tools:targetApi="31">
         <activity
+            android:name=".Aurora.Activity.activitys.ProfileEditAurora"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <service
+            android:name=".Aurora.Activity.Service.MyIntentService"
+            android:exported="false" />
+
+        <service
+            android:name=".Aurora.Activity.Service.JobServiceNote"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
             android:name=".Aurora.Activity.Profile"
             android:exported="false">
             <meta-data
@@ -20,7 +40,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Aurora.Activity.Level"
+            android:name=".Aurora.Activity.Stage"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

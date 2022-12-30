@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -47,6 +48,7 @@ dependencies {
     // Room components
     implementation "androidx.room:room-runtime:$rootProject.roomVersion"
     implementation 'androidx.mediarouter:mediarouter:1.3.1'
+    implementation 'com.google.firebase:firebase-database:20.0.4'
     annotationProcessor "androidx.room:room-compiler:$rootProject.roomVersion"
     androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
 
@@ -58,6 +60,8 @@ dependencies {
     // UI
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
     implementation "com.google.android.material:material:$rootProject.materialVersion"
+
+    implementation "androidx.core:core:1.6.0"
 
     implementation 'com.daimajia.androidanimations:library:2.4@aar'
     implementation 'androidx.appcompat:appcompat:1.4.1'

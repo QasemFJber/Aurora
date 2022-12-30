@@ -1,6 +1,7 @@
 package com.example.qasemtest.Aurora.Activity;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -17,6 +18,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.qasemtest.Aurora.Activity.SharedPreferences.AppSharedPreference;
+import com.example.qasemtest.Aurora.Activity.activitys.ProfileEditAurora;
 import com.example.qasemtest.R;
 import com.example.qasemtest.databinding.ActivityProfileBinding;
 
@@ -27,7 +30,7 @@ public class Profile extends AppCompatActivity{
     private String userEmail;
     private int userPhone;
     private String userLocation;
-    private SharedpreferencesAurora sharedpreferencesAurora =  new SharedpreferencesAurora();
+
 //    static SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(AppController.getContext());
 //    public static SharedPreferences.Editor editor = sharedPreferences.edit();
     @Override
@@ -35,26 +38,33 @@ public class Profile extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         binding = ActivityProfileBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-//        String name = sharedPreferences.getString("username","No Name");
-//        String email = sharedPreferences.getString("useremail","No Email");
-//        String phone = sharedPreferences.getString("userphone","No Phone");
-//        String location = sharedPreferences.getString("userlocation","No Location");
-//        if (name == null){
-//            Toast.makeText(this, "Update Fialed", Toast.LENGTH_SHORT).show();
-//        }else {
-////            binding.tvUsername.setText(name);
-//        }
-
-//        binding.tvUseremail.setText(email);
-//        binding.tvUserphone.setText(phone);
-//        binding.tvUserlocation.setText(location);
 
 
-
-        binding.textView.setOnClickListener(v -> {
-            showDialog();
+        SetDataInTextView();
+        binding.editButton.setOnClickListener(v -> {
+            Intent intent = new Intent(getBaseContext(), ProfileEditAurora.class);
+            startActivity(intent);
         });
 
+
+
+//        binding.b.setOnClickListener(v -> {
+//            showDialog();
+//        });
+
+    }
+
+    private void SetDataInTextView() {
+        String name = AppSharedPreference.getInstance().getSharedPreferences().getString("name","NoNAME");
+        String email =AppSharedPreference.getInstance().getSharedPreferences().getString("email","NoEmail");
+        String username =AppSharedPreference.getInstance().getSharedPreferences().getString("username","NoUserName");
+        int pass = AppSharedPreference.getInstance().getSharedPreferences().getInt("password",0);
+        binding.titleName.setText(name);
+        binding.titleUsername.setText(username);
+        binding.profileName.setText(name);
+        binding.profileEmail.setText(email);
+        binding.profileUsername.setText(userName);
+        binding.profilePassword.setText(pass);
     }
 
 

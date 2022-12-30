@@ -39,7 +39,7 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
        if (view.getId() == R.id.btn_start_play){
-           Intent intent = new Intent(getApplicationContext(),StartPlay.class);
+           Intent intent = new Intent(getApplicationContext(), Stage.class);
            startActivity(intent);
 
        }else if (view.getId() == R.id.settings){

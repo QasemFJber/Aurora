@@ -98,12 +98,9 @@
         android:layout_marginEnd="@dimen/_25sdp"
         android:layout_marginBottom="@dimen/_32sdp"
         android:textSize="@dimen/_16ssp"
-
-
         android:background="@drawable/edit_text_update_profile"
         android:drawableStart="@drawable/ic_baseline_email_24"
         android:drawablePadding="@dimen/_7sdp"
-
         android:ems="10"
         android:textStyle="italic"
         android:hint="@string/email"
@@ -118,14 +115,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_8sdp"
-
         android:textSize="@dimen/_16ssp"
-
         android:layout_marginEnd="@dimen/_25sdp"
         android:layout_marginBottom="@dimen/_32sdp"
         android:background="@drawable/edit_text_update_profile"
         android:drawableStart="@drawable/ic_baseline_phone_iphone_24"
-
         android:drawablePadding="@dimen/_7sdp"
         android:ems="10"
         android:textStyle="italic"
