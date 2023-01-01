@@ -11,8 +11,10 @@
     <string name="numberofquestions" translatable="false">Number Of Questions</string>
     <string name="Experience" translatable="false">Experience</string>
     <string name="username" translatable="false">User Name</string>
+    <string name="name" translatable="false">name</string>
     <string name="email" translatable="false">E-mail</string>
     <string name="phone" translatable="false">Phone</string>
+    <string name="password" translatable="false">Password</string>
     <string name="location" translatable="false">Location</string>
     <string name="save" translatable="false">Save</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -22,5 +24,9 @@
     <string name="ere">AuroraChannel</string>
     <string name="channel_description">ChannelDescription</string>
     <string name="Level">Level</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="level_1" translatable="false">LEVEL 1</string>
+    <string name="Question">Question 1 </string>
+    <string name="enter_a_answer">Enter A Answer</string>
 
 </resources>

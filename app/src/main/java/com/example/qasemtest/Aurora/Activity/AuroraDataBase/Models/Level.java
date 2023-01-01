@@ -7,6 +7,8 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class Level {
+
+
     @PrimaryKey
     private int level_no;
     @NonNull

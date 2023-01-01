@@ -16,10 +16,13 @@
     <string name="location" translatable="false">موقعك</string>
     <string name="save" translatable="false">حفظ</string>
     <string name="hello_blank_fragment">مرحبا فراحمنتس</string>
+    <string name="name" translatable="false">الاسم</string>
+    <string name="password" translatable="false">كلمة المرور</string>
 
     <string name="sign_in_account">تسجيل الدخول إلى حسابك</string>
     <string name="register_text"><u>سجل الان</u></string>
     <string name="ere">AuroraChannel</string>
     <string name="channel_description">ChannelDescription</string>
     <string name="Level">المرحلة</string>
+    <string name="edit_profile">تعديل الملف الشخصي </string>
 </resources>

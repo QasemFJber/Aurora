@@ -5,9 +5,11 @@ import android.app.Application;
 import androidx.lifecycle.LiveData;
 
 import com.example.qasemtest.Aurora.Activity.AuroraDataBase.Dao.Level_Dao;
+import com.example.qasemtest.Aurora.Activity.AuroraDataBase.Dao.NumberOfQuestion_Dao;
 import com.example.qasemtest.Aurora.Activity.AuroraDataBase.Dao.Question_Dao;
 import com.example.qasemtest.Aurora.Activity.AuroraDataBase.Dao.User_Dao;
 import com.example.qasemtest.Aurora.Activity.AuroraDataBase.Models.Level;
+import com.example.qasemtest.Aurora.Activity.AuroraDataBase.Models.NumberOfQuestion;
 import com.example.qasemtest.Aurora.Activity.AuroraDataBase.Models.Question;
 import com.example.qasemtest.Aurora.Activity.AuroraDataBase.Models.User;
 import com.example.qasemtest.Aurora.Activity.Interface.CallBackList;
@@ -19,12 +21,14 @@ public class Repository {
 
     private Level_Dao level_dao;
     private Question_Dao question_dao;
+    private NumberOfQuestion_Dao numberOfQuestion_dao;
     private User_Dao user_dao;
 
     public Repository(Application application) {
         DataBase db = DataBase.getDatabase(application);
         level_dao = db.level_dao();
         question_dao = db.question_dao();
+        numberOfQuestion_dao=db.numberOfQuestion_dao();
 
 
     }
@@ -59,7 +63,7 @@ public class Repository {
         });
     }
     LiveData<List<Level>> getAllLevel() {
-        return getAllLevel();
+        return level_dao.getAllLevels();
     }
 
 
@@ -88,7 +92,10 @@ public class Repository {
         });
     }
     LiveData<List<Question>> getAllQuestions() {
-        return getAllQuestions();
+        return question_dao.getAllQuestions();
+    }
+    LiveData<List<Question>> getAllQuestionsOfLevel(int id) {
+        return question_dao.getAllQuestionsOfLevel(id);
     }
 
 
@@ -121,6 +128,45 @@ public class Repository {
         return getUser();
     }
 
+
+
+    /**
+     *NumberOfQuestions  table functions
+     * Add
+     * Amendment
+     * deletion
+     * Bring all the data into the table
+     * */
+
+
+
+    void insert_QuestionOfNumber(NumberOfQuestion numberOfQuestion, InsertListener listener) {
+        DataBase.databaseWriteExecutor.execute(() -> {
+            long _id = numberOfQuestion_dao.insert_QuestionOfNumber(numberOfQuestion);
+            listener.InsertLevel(_id);
+        });
+    }
+    void update_QuestionOfNumber(NumberOfQuestion numberOfQuestion) {
+        DataBase.databaseWriteExecutor.execute(() -> {
+            numberOfQuestion_dao.update_QuestionOfNumber(numberOfQuestion);
+        });
+    }
+    void delete_QuestionOfNumber(NumberOfQuestion numberOfQuestion) {
+        DataBase.databaseWriteExecutor.execute(() -> {
+            numberOfQuestion_dao.delete_QuestionOfNumber(numberOfQuestion);
+        });
+    }
+    LiveData<List<NumberOfQuestion>> getAllQuestionOfNumber() {
+        return numberOfQuestion_dao.getAllQuestionOfNumber();
+    }
+
+    LiveData<List<NumberOfQuestion>> getAllTrueAnswer() {
+        return numberOfQuestion_dao.getAllTrueAnswer();
+    }
+
+    LiveData<List<NumberOfQuestion>> getAllFalseAnswer() {
+        return numberOfQuestion_dao.getAllFalseAnswer();
+    }
 
 }
 

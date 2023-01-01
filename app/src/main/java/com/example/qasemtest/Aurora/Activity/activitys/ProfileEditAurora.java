@@ -19,25 +19,33 @@ public class ProfileEditAurora extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityProfileEditAuroraBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        saveDataInSharedPreference();
         binding.saveButton.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(), Profile.class);
+            Bundle bundle = new Bundle();
+            String name =binding.editName.getText().toString().trim();
+            String email =binding.editEmail.getText().toString().trim();
+            String username =binding.editUsername.getText().toString().trim();
+            String password =binding.editPassword.getText().toString().trim();
+            AppSharedPreference.getInstance().getEditor().putString("name",name).commit();
+            AppSharedPreference.getInstance().getEditor().putString("email",email).commit();
+            AppSharedPreference.getInstance().getEditor().putString("username",username).commit();
+            AppSharedPreference.getInstance().getEditor().putString("password",password).commit();
+//            bundle.putString("name",name);
+//            bundle.putString("email",email);
+//            bundle.putString("username",username);
+//            bundle.putString("password", password);
+//            intent.putExtras(bundle);
             startActivity(intent);
+//            AppSharedPreference.getInstance().getEditor().putBoolean("editprof",true).commit();
         });
 
 
+
     }
 
-
-    private void saveDataInSharedPreference() {
-        String name =binding.editName.getText().toString().trim();
-        String email =binding.editName.getText().toString().trim();
-        String username =binding.editName.getText().toString().trim();
-        String password =binding.editName.getText().toString().trim();
-        AppSharedPreference.getInstance().getEditor().putString("name",name);
-        AppSharedPreference.getInstance().getEditor().putString("email",email);
-        AppSharedPreference.getInstance().getEditor().putString("username",username);
-        AppSharedPreference.getInstance().getEditor().putInt("password", Integer.parseInt(password));
+    @Override
+    protected void onStop() {
+        super.onStop();
+        finish();
     }
-
 }

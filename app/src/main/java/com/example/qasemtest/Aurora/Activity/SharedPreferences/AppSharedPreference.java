@@ -27,9 +27,7 @@ public class AppSharedPreference {
     }
 
 
-
-
-    public SharedPreferences.Editor getEditor(){
+    public SharedPreferences.Editor getEditor() {
         return editor;
     }
 

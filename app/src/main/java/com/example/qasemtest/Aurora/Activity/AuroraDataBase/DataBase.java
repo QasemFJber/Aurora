@@ -7,20 +7,22 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import com.example.qasemtest.Aurora.Activity.AuroraDataBase.Dao.Level_Dao;
+import com.example.qasemtest.Aurora.Activity.AuroraDataBase.Dao.NumberOfQuestion_Dao;
 import com.example.qasemtest.Aurora.Activity.AuroraDataBase.Dao.Question_Dao;
 import com.example.qasemtest.Aurora.Activity.AuroraDataBase.Models.Level;
+import com.example.qasemtest.Aurora.Activity.AuroraDataBase.Models.NumberOfQuestion;
 import com.example.qasemtest.Aurora.Activity.AuroraDataBase.Models.Question;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = {Level.class,  Question.class}, version = 1, exportSchema = false)
+@Database(entities = {Level.class,  Question.class, NumberOfQuestion.class}, version = 2, exportSchema = false)
 public abstract class DataBase extends RoomDatabase {
 
 
 
     public abstract Level_Dao level_dao();
-
+    public abstract NumberOfQuestion_Dao numberOfQuestion_dao();
     public abstract Question_Dao question_dao();
 
     private static volatile DataBase INSTANCE;

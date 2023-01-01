@@ -119,4 +119,325 @@
 				"hint": "التونة تعتبر اسرع المخلوقات البحرية، حيث يعتبر الحوت أكبرها"
 			}
 		]
-	}]
+	},
+	{
+		"level_no": 3,
+		"unlock_points": 9,
+		"questions": [{
+			"id": 1,
+			"title": "شكل مجرة درب التبانة هو حلزوني",
+			"answer_1": "",
+			"answer_2": "",
+			"answer_3": "",
+			"answer_4": "",
+			"true_answer": "true",
+			"points": 5,
+			"duration": 1000,
+			"pattern": {
+				"pattern_id": 1,
+				"pattern_name": "True of False"
+			},
+			"hint": "شكل مجرة درب التبانة هو حلزوني"
+		},
+			{
+				"id": 2,
+				"title": "يسمى صغير الضفدع",
+				"answer_1": "دنغل",
+				"answer_2": "شرغوف",
+				"answer_3": "يرقة",
+				"answer_4": "كوالا",
+				"true_answer": "شرغوف",
+				"points": 4,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 2,
+					"pattern_name": "Choose the correct answer"
+				},
+				"hint": "صغير الضفدع هو الشرغوف"
+			}
+		,{
+				"id": 3,
+				"title": "تعتبر ال....... هي أسرع المخلوقات البحرية",
+				"answer_1": "",
+				"answer_2": "",
+				"answer_3": "",
+				"answer_4": "",
+				"true_answer": "التونة",
+				"points": 1,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 3,
+					"pattern_name": "Fill the answer"
+				},
+				"hint": "التونة تعتبر اسرع المخلوقات البحرية، حيث يعتبر الحوت أكبرها"
+			}
+		]
+	},
+	{
+		"level_no": 4,
+		"unlock_points": 12,
+		"questions": [{
+			"id": 1,
+			"title": "شكل مجرة درب التبانة هو حلزوني",
+			"answer_1": "",
+			"answer_2": "",
+			"answer_3": "",
+			"answer_4": "",
+			"true_answer": "true",
+			"points": 5,
+			"duration": 1000,
+			"pattern": {
+				"pattern_id": 1,
+				"pattern_name": "True of False"
+			},
+			"hint": "شكل مجرة درب التبانة هو حلزوني"
+		},
+			{
+				"id": 2,
+				"title": "يسمى صغير الضفدع",
+				"answer_1": "دنغل",
+				"answer_2": "شرغوف",
+				"answer_3": "يرقة",
+				"answer_4": "كوالا",
+				"true_answer": "شرغوف",
+				"points": 4,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 2,
+					"pattern_name": "Choose the correct answer"
+				},
+				"hint": "صغير الضفدع هو الشرغوف"
+			}
+		,{
+				"id": 3,
+				"title": "تعتبر ال....... هي أسرع المخلوقات البحرية",
+				"answer_1": "",
+				"answer_2": "",
+				"answer_3": "",
+				"answer_4": "",
+				"true_answer": "التونة",
+				"points": 1,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 3,
+					"pattern_name": "Fill the answer"
+				},
+				"hint": "التونة تعتبر اسرع المخلوقات البحرية، حيث يعتبر الحوت أكبرها"
+			}
+		]
+	},
+	{
+		"level_no": 5,
+		"unlock_points": 15,
+		"questions": [{
+			"id": 1,
+			"title": "شكل مجرة درب التبانة هو حلزوني",
+			"answer_1": "",
+			"answer_2": "",
+			"answer_3": "",
+			"answer_4": "",
+			"true_answer": "true",
+			"points": 5,
+			"duration": 1000,
+			"pattern": {
+				"pattern_id": 1,
+				"pattern_name": "True of False"
+			},
+			"hint": "شكل مجرة درب التبانة هو حلزوني"
+		},
+			{
+				"id": 2,
+				"title": "يسمى صغير الضفدع",
+				"answer_1": "دنغل",
+				"answer_2": "شرغوف",
+				"answer_3": "يرقة",
+				"answer_4": "كوالا",
+				"true_answer": "شرغوف",
+				"points": 4,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 2,
+					"pattern_name": "Choose the correct answer"
+				},
+				"hint": "صغير الضفدع هو الشرغوف"
+			}
+		,{
+				"id": 3,
+				"title": "تعتبر ال....... هي أسرع المخلوقات البحرية",
+				"answer_1": "",
+				"answer_2": "",
+				"answer_3": "",
+				"answer_4": "",
+				"true_answer": "التونة",
+				"points": 1,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 3,
+					"pattern_name": "Fill the answer"
+				},
+				"hint": "التونة تعتبر اسرع المخلوقات البحرية، حيث يعتبر الحوت أكبرها"
+			}
+		]
+	},
+
+	{
+		"level_no": 6,
+		"unlock_points": 18,
+		"questions": [{
+			"id": 1,
+			"title": "شكل مجرة درب التبانة هو حلزوني",
+			"answer_1": "",
+			"answer_2": "",
+			"answer_3": "",
+			"answer_4": "",
+			"true_answer": "true",
+			"points": 5,
+			"duration": 1000,
+			"pattern": {
+				"pattern_id": 1,
+				"pattern_name": "True of False"
+			},
+			"hint": "شكل مجرة درب التبانة هو حلزوني"
+		},
+			{
+				"id": 2,
+				"title": "يسمى صغير الضفدع",
+				"answer_1": "دنغل",
+				"answer_2": "شرغوف",
+				"answer_3": "يرقة",
+				"answer_4": "كوالا",
+				"true_answer": "شرغوف",
+				"points": 4,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 2,
+					"pattern_name": "Choose the correct answer"
+				},
+				"hint": "صغير الضفدع هو الشرغوف"
+			}
+		,{
+				"id": 3,
+				"title": "تعتبر ال....... هي أسرع المخلوقات البحرية",
+				"answer_1": "",
+				"answer_2": "",
+				"answer_3": "",
+				"answer_4": "",
+				"true_answer": "التونة",
+				"points": 1,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 3,
+					"pattern_name": "Fill the answer"
+				},
+				"hint": "التونة تعتبر اسرع المخلوقات البحرية، حيث يعتبر الحوت أكبرها"
+			}
+		]
+	},
+	{
+		"level_no": 7,
+		"unlock_points": 21,
+		"questions": [{
+			"id": 1,
+			"title": "شكل مجرة درب التبانة هو حلزوني",
+			"answer_1": "",
+			"answer_2": "",
+			"answer_3": "",
+			"answer_4": "",
+			"true_answer": "true",
+			"points": 5,
+			"duration": 1000,
+			"pattern": {
+				"pattern_id": 1,
+				"pattern_name": "True of False"
+			},
+			"hint": "شكل مجرة درب التبانة هو حلزوني"
+		},
+			{
+				"id": 2,
+				"title": "يسمى صغير الضفدع",
+				"answer_1": "دنغل",
+				"answer_2": "شرغوف",
+				"answer_3": "يرقة",
+				"answer_4": "كوالا",
+				"true_answer": "شرغوف",
+				"points": 4,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 2,
+					"pattern_name": "Choose the correct answer"
+				},
+				"hint": "صغير الضفدع هو الشرغوف"
+			}
+		,{
+				"id": 3,
+				"title": "تعتبر ال....... هي أسرع المخلوقات البحرية",
+				"answer_1": "",
+				"answer_2": "",
+				"answer_3": "",
+				"answer_4": "",
+				"true_answer": "التونة",
+				"points": 1,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 3,
+					"pattern_name": "Fill the answer"
+				},
+				"hint": "التونة تعتبر اسرع المخلوقات البحرية، حيث يعتبر الحوت أكبرها"
+			}
+		]
+	},
+	{
+		"level_no": 8,
+		"unlock_points": 24,
+		"questions": [{
+			"id": 1,
+			"title": "شكل مجرة درب التبانة هو حلزوني",
+			"answer_1": "",
+			"answer_2": "",
+			"answer_3": "",
+			"answer_4": "",
+			"true_answer": "true",
+			"points": 5,
+			"duration": 1000,
+			"pattern": {
+				"pattern_id": 1,
+				"pattern_name": "True of False"
+			},
+			"hint": "شكل مجرة درب التبانة هو حلزوني"
+		},
+			{
+				"id": 2,
+				"title": "يسمى صغير الضفدع",
+				"answer_1": "دنغل",
+				"answer_2": "شرغوف",
+				"answer_3": "يرقة",
+				"answer_4": "كوالا",
+				"true_answer": "شرغوف",
+				"points": 4,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 2,
+					"pattern_name": "Choose the correct answer"
+				},
+				"hint": "صغير الضفدع هو الشرغوف"
+			}
+		,{
+				"id": 3,
+				"title": "تعتبر ال....... هي أسرع المخلوقات البحرية",
+				"answer_1": "",
+				"answer_2": "",
+				"answer_3": "",
+				"answer_4": "",
+				"true_answer": "التونة",
+				"points": 1,
+				"duration": 1000,
+				"pattern": {
+					"pattern_id": 3,
+					"pattern_name": "Fill the answer"
+				},
+				"hint": "التونة تعتبر اسرع المخلوقات البحرية، حيث يعتبر الحوت أكبرها"
+			}
+		]
+	}
+
+]

@@ -71,7 +71,7 @@
                 android:padding="@dimen/_8sdp">
 
                 <TextView
-                    android:id="@+id/postsNumber"
+                    android:id="@+id/correctNumber"
                     android:layout_width="80dp"
                     android:layout_height="60dp"
                     android:gravity="center"
@@ -85,7 +85,7 @@
                     android:id="@+id/correctanswers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Correct Answers"
+                    android:text="@string/correctanswers"
                     android:textAlignment="center"
                     android:textColor="@color/lavender"
                     android:textSize="@dimen/_16ssp" />
@@ -102,7 +102,7 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/followersNo"
+                    android:id="@+id/worng"
                     android:layout_width="80dp"
                     android:layout_height="60dp"
                     android:gravity="center"
@@ -116,7 +116,7 @@
                     android:id="@+id/wronganswers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Wrong Answers"
+                    android:text="@string/wrongwnswers"
                     android:textAlignment="center"
                     android:textColor="@color/lavender"
                     android:textSize="16sp" />
@@ -133,7 +133,7 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/followingNo"
+                    android:id="@+id/numberofquestions"
                     android:layout_width="80dp"
                     android:layout_height="60dp"
                     android:gravity="center"
@@ -144,10 +144,10 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/numberofquestions"
+                    android:id="@+id/numberofquestionstext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Number of Questions"
+                    android:text="@string/numberofquestions"
                     android:textAlignment="center"
                     android:textColor="@color/lavender"
                     android:textSize="16sp" />
@@ -171,7 +171,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Name"
+                android:text="@string/name"
                 android:textColor="@color/lavender"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -207,7 +207,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Email"
+                android:text="@string/email"
                 android:textColor="@color/lavender"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -243,7 +243,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Username"
+                android:text="@string/username"
                 android:textColor="@color/lavender"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -279,7 +279,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Password"
+                android:text="@string/password"
                 android:textColor="@color/lavender"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -304,7 +304,7 @@
         android:layout_height="60dp"
         android:id="@+id/editButton"
         android:gravity="center"
-        android:text="Edit Profile"
+        android:text="@string/edit_profile"
         android:textSize="18sp"
         app:cornerRadius = "20dp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -21,4 +21,7 @@ public interface Question_Dao {
     int delete_Question (Question question);
     @Query("select * from Question")
     LiveData<List<Question>> getAllQuestions ();
+    @Query("select * from Question where id_level_child =:id")
+    LiveData<List<Question>> getAllQuestionsOfLevel (int id);
+
 }
